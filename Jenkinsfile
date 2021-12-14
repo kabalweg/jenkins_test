@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  
+  tools {nodejs "nodejs"}
+  
   stages {
     stage ('Print Commit and Branch') {
       steps {
